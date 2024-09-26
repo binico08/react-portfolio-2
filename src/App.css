@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d242be;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .navbar-nav a {
+    color: black;
+    position: relative;
+  }
+  
+  .navbar-nav a:hover {
+    color: #fca61f;
+  }
+  
+  .navbar-nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #fca61f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .navbar-nav a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .c-btn {
+    border: none;
+    background: #fca61f;
+    color: #fff;
+    font-size: 1.2rem;
+
+
+    .home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+  }
+  
+  .home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #d242be;
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+    text-align: center;
+  }
+  
+  .home a {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #d242be;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home a:hover {
+    background-color: #e85d95;
+  }
+  
+  /* about section */
+  #aboutme {
+    padding: 5rem 0;
+    background-color: #f5f5f5;
+  }
+  
+  #aboutme h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #d242be;
+  }
+  
+  #aboutme p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 30rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* portfolio section */
+  #portfolio {
+    padding: 5rem 0;
+    background-color: #fff;
+  }
+  
+  #portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #d242be;
+  }
+  
+  .portfolio-item {
+    margin-bottom: 3rem;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #333;
+  }
+  
+  .portfolio-item p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 0;
+  }
+  
+  /* contact section */
+  #contact {
+    padding: 5rem 0;
+    background-color: #f5f5f5;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #d242be;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  #contact input,
+  #contact textarea {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+  }
+  
+  #contact button {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #d242be;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact button:hover {
+    background-color: #e85d95;
+  }
+  
+  /* media queries */
+  @media (max-width: 768px) {
+    .home h1 {
+      font-size: 2.5rem;
+    }
+  
+    #aboutme h2 {
+        font-size: 2rem;
+      }
+    
+      #portfolio h2 {
+        font-size: 2rem;
+      }
+    
+      #contact h2 {
+        font-size: 2rem;
+      }
+    
+      .portfolio-item {
+        margin-bottom: 2rem;
+      }
+    
+      .portfolio-item img {
+        width: 100%;
+        border-radius: 1rem;
+      }
+    
+      .portfolio-item h3 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        color: #333;
+      }
+    
+      .portfolio-item p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 0;
+      }
+    
+      #contact form {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      #contact label {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+    
+      #contact input,
+      #contact textarea {
+        font-size: 1rem;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: 1px solid #ccc;
+        margin-bottom: 1.5rem;
+      }
+    
+      #contact button {
+        font-size: 1rem;
+        color: #fff;
+        background-color: #d242be;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+    
+      #contact button:hover {
+        background-color: #e85d95;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .home h1 {
+        font-size: 2rem;
+      }
+    
+      #aboutme h2 {
+        font-size: 1.8rem;
+      }
+    
+      #portfolio h2 {
+        font-size: 1.8rem;
+      }
+    
+      #contact h2 {
+        font-size: 1.8rem;
+      }
+    
+      .portfolio-item {
+        margin-bottom: 1.5rem;
+      }
+    
+      .portfolio-item img {
+        width: 100%;
+        border-radius: 1rem;
+      }
+    
+      .portfolio-item h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+        color: #333;
+      }
+    
+      .portfolio-item p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 0;
+      }
+    
+      #contact form {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      #contact label {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+    
+      #contact input,
+      #contact textarea {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: 1px solid #ccc;
+        margin-bottom: 1.5rem;
+      }
+    
+      #contact button {
+        font-size: 0.9rem;
+        color: #fff;
+        background-color: #d242be;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+    
+      #contact button:hover {
+        background-color: #e85d95;
+      }
+    }
+}
