@@ -6,10 +6,7 @@ import MusikalistaLogo from './MusikalistaLogo.png';
 import tetrisparody from './tetrisparody.png';
 import ebook from './ebook.png';
 import me from './me.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
-AOS.init();
 
 
 function App() {
@@ -42,8 +39,6 @@ function App() {
       {/* Bootstrap Icons CDN link */}
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-      {/* AOS Library CSS file CDN link for animations */}
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
       {/* jQuery CDN link */}
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" />
